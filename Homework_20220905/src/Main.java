@@ -26,7 +26,7 @@ public class Main {
             str3+=str2.charAt(index2);
             index2-=1;
         }
-       
+
         System.out.println(str1 + str3 );
 
     }
