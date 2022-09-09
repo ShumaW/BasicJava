@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BasicJava.iml" filepath="$PROJECT_DIR$/.idea/BasicJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework_20220809_1/Homework_20220809_1.iml" filepath="$PROJECT_DIR$/Homework_20220809_1/Homework_20220809_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework_20220810_2/Homework_20220810_2.iml" filepath="$PROJECT_DIR$/Homework_20220810_2/Homework_20220810_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework_20220815_1/Homework_20220815_1.iml" filepath="$PROJECT_DIR$/Homework_20220815_1/Homework_20220815_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework_20220822_1/Homework_20220822_1.iml" filepath="$PROJECT_DIR$/Homework_20220822_1/Homework_20220822_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework_20220822_2/Homework_20220822_2.iml" filepath="$PROJECT_DIR$/Homework_20220822_2/Homework_20220822_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework_20220824/Homework_20220824.iml" filepath="$PROJECT_DIR$/Homework_20220824/Homework_20220824.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework_20220831/Homework_20220831.iml" filepath="$PROJECT_DIR$/Homework_20220831/Homework_20220831.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework_20220905/Homework_20220905.iml" filepath="$PROJECT_DIR$/Homework_20220905/Homework_20220905.iml" />
+      <module fileurl="file://$PROJECT_DIR$/j20220829/j20220829.iml" filepath="$PROJECT_DIR$/j20220829/j20220829.iml" />
+    </modules>
+  </component>
+</project>
