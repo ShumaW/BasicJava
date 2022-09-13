@@ -76,9 +76,9 @@ public class Main {
 
         String str1 = "Java is a very popular language";
         String finalStr = "";
-        int startIndex = 5;
+        int startIndex = 2;
         int endIndex = 8;
-       if ((startIndex<=0&&endIndex<=0) || startIndex>endIndex) {
+       if (startIndex<=0 || endIndex<=0 || startIndex>endIndex) {
            System.out.println("ERROR");
        } else {
             for ( ; startIndex<=str1.length()-1 && startIndex!=endIndex ;startIndex+=1)

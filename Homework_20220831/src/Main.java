@@ -15,10 +15,6 @@ public class Main {
 
         // Решение
         while (factor <= 10) {
-
-
-
-
             result = num * factor;
             System.out.printf(num + " * " + factor + " = " + result + "%n");
             factor += 1;
@@ -42,7 +38,6 @@ public class Main {
         while (num2 != 0) {
             num2 /= 10;
             counter += 1;
-
         }
         System.out.printf(num1 + "  - this number has " + counter + " digits");
     }
