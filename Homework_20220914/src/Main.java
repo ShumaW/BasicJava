@@ -1,14 +1,23 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("First level. Option №1");
-        cardNumber1("DE5128279087265" , 4 , 3);
+        cardNumber1("DE5128279087265" , 4 , 2);
         System.out.println("");
         System.out.println("First level . Option №2");
-       cardNumber2("DE5128279087265" , 4 , 2);
+        cardNumber2("DE5128279087265" , 4 , 2);
         System.out.println("------------------------------");
         System.out.println("Second level");
         System.out.print("1. ");
         replace1("Hello world!" , "world", "all");
+        System.out.println("");
+        System.out.println("------------------------------------------------------");
+
+        System.out.println("Не мой код!!!!!!");
+        replace("Hello world!", "world", "all");
+        replace("Hello world!", "l", "L");
+        replace("Hello world!", "qwe", "L");
+        replace("Hello world!", "ll", "");
+
     }
 
     // Представьте, что вы пишите банковскую программу. Вам нужно реализовать метод, который вместо заданной строки
@@ -21,7 +30,7 @@ public class Main {
 
         for (int index = 0; index < str.length(); index++) {
             String result = "";
-            if (index < num1 || index > str.length() - num2) {
+            if (index < num1 || index >= str.length() - num2) {
                 result += str.charAt(index);
             } else {
                 result += "*";
@@ -34,8 +43,8 @@ public class Main {
     }
 
     public static void cardNumber2(String str1, int num1 , int num2) {
-    String result = str1.substring( num1, str1.length() - num2);
-    result = result.replace(result, "*********");
+        String result = str1.substring( num1, str1.length() - num2);
+        result = result.replace(result, "*********");
         System.out.println(str1.substring(0, num1) + result + str1.substring(str1.length() - num2 , str1.length()));
     }
 
@@ -53,17 +62,43 @@ public class Main {
 
         for (int index = 0; index < str.length()  && newIndex < newStr.length(); index++ )
 
-        if ( str.charAt(index) != oldStr.charAt(oldIndex) ) {
-            result+= str.charAt(index);
+            if ( str.charAt(index) != oldStr.charAt(oldIndex) ) {
+                result+= str.charAt(index);
 
-        } else {
-            result += newStr.charAt(newIndex);
+            } else {
+                result += newStr.charAt(newIndex);
 
-            newIndex++;
-            oldIndex++;
+                newIndex++;
+                oldIndex++;
 
-        }
+            }
         System.out.print(result + "!");
         return result;
     }
+    // Это не моё решение
+    public static String replace(String str, String oldStr, String newStr){
+        String result = "";
+
+        for (int index = 0 ; index<str.length(); index++){
+
+            String intStr ="";
+            for (int intIndex = index; (intIndex<oldStr.length() + index) && intIndex<str.length(); intIndex++){
+                intStr += str.charAt(intIndex);
+            }
+
+            if(intStr.equals(oldStr)) {
+                result += newStr;
+                index = index+oldStr.length()-1;
+            } else {
+                result += str.charAt(index);
+            }
+
+        }
+        System.out.println(result);
+        return result;
+    }
 }
+
+
+
+
