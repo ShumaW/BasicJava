@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        int [] arroy = {1,3,6,-1,4,-5,9,-21};
+        int [] arroy = {105,1,3,-68,-1,4,-5,9,-21};
         String[] words = {"qwe", "axcvbn","qwertyuio'","qas","ijcniejncqpeijncqpi"};
 
         System.out.println("First level");
@@ -13,10 +13,9 @@ public class Main {
     public static int findMin (int [] arroy) {
 
         int min = 0;
-        for (int i = 0; i < arroy.length-1; i++) {
-            min = arroy[i];
-            if (min > arroy[i + 1]) {
-                min = arroy[i + 1];
+        for (int i = 0; i < arroy.length; i++) {
+            if (min > arroy[i]) {
+                min = arroy[i];
             }
 
         }
