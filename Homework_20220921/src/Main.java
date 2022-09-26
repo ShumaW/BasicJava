@@ -32,7 +32,7 @@ public class Main {
            String temp1 = words[i+1];
 
            if (temp.length() < temp1.length()){
-               res = temp1.length();
+               res = i+1;
            }
         }
         return res;
