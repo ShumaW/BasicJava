@@ -12,7 +12,7 @@ public class Main {
     // Дан массив целых чисел. Реализовать метод, который возвращает минимальное значение в данном массиве. Например: {1,3,6,-1,4,-5,9} -> -5
     public static int findMin (int [] arroy) {
 
-        int min = 0;
+        int min = arroy[0];
         for (int i = 0; i < arroy.length; i++) {
             if (min > arroy[i]) {
                 min = arroy[i];
